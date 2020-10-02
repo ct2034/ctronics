@@ -57,8 +57,6 @@ F 3 "~" H 800 1500 50  0001 C CNN
 	1    800  1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1000 1500 1750 1500
 $Comp
 L Device:C C10
 U 1 1 5F58AA9C
@@ -510,14 +508,6 @@ Wire Wire Line
 Wire Wire Line
 	7650 5500 5350 5500
 Connection ~ 5350 5500
-Wire Notes Line
-	1350 1250 1350 2300
-Wire Notes Line
-	1350 2300 3300 2300
-Wire Notes Line
-	3300 2300 3300 1250
-Wire Notes Line
-	3300 1250 1350 1250
 $Comp
 L Device:LED_Dual_CAC D3
 U 1 1 5F6DB466
@@ -717,4 +707,27 @@ Wire Wire Line
 Wire Wire Line
 	7250 4500 6450 4500
 Connection ~ 6450 4500
+$Comp
+L pspice:DIODE D8
+U 1 1 5F72D601
+P 1500 1500
+F 0 "D8" H 1500 1765 50  0000 C CNN
+F 1 "DIODE" H 1500 1674 50  0000 C CNN
+F 2 "Diode_THT:D_DO-15_P10.16mm_Horizontal" H 1500 1500 50  0001 C CNN
+F 3 "~" H 1500 1500 50  0001 C CNN
+	1    1500 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1500 1300 1500
+Wire Wire Line
+	1700 1500 1750 1500
+Wire Notes Line
+	3300 2300 1300 2300
+Wire Notes Line
+	1300 2300 1300 1250
+Wire Notes Line
+	1300 1250 3300 1250
+Wire Notes Line
+	3300 1250 3300 2300
 $EndSCHEMATC
